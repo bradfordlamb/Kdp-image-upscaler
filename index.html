@@ -1,15 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+ 
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <meta property="og:image" content="favicon.png">
 <meta name="theme-color" content="#0b57d0">
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298"
-     crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KDP Image Upscaler — Free 600 DPI Upscaler for Kindle Direct Publishing</title>
@@ -18,7 +16,6 @@
 <meta property="og:title" content="KDP Image Upscaler — Free 600 DPI Upscaler for Kindle Direct Publishing">
 <meta property="og:description" content="Instantly upscale your images to 300 or 600 DPI for Amazon KDP print publishing. Free, fast, private — runs entirely in your browser.">
 <meta property="og:type" content="website">
-
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -33,16 +30,10 @@
   ]
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- Replace the content below with your actual Google AdSense publisher ID -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
-
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
   --ink:     #16120a;
   --paper:   #faf6ee;
@@ -56,9 +47,7 @@
   --border:  rgba(192,138,32,0.25);
   --shadow:  0 4px 32px rgba(22,18,10,0.13);
 }
-
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--paper);
   color: var(--ink);
@@ -66,7 +55,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
 }
-
 /* ── HEADER / NAV ── */
 header {
   background: var(--ink);
@@ -105,7 +93,6 @@ nav a {
   transition: color 0.15s;
 }
 nav a:hover { color: var(--gold-lt); }
-
 /* ── HERO ── */
 .hero {
   background: var(--ink);
@@ -170,7 +157,6 @@ nav a:hover { color: var(--gold-lt); }
   padding: 6px 14px;
   border-radius: 20px;
 }
-
 /* ── LAYOUT ── */
 .page-body {
   max-width: 1100px;
@@ -185,17 +171,99 @@ nav a:hover { color: var(--gold-lt); }
   .page-body { grid-template-columns: 1fr; }
   .sidebar { order: -1; }
 }
-
-/* ── AD SLOTS ── */
-.ad-slot {
+/* ── SUPPORT / DONATION BANNERS ── */
+.support-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
   text-align: center;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 20px;
   margin: 0 0 36px;
-  min-height: 60px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--ink);
 }
-.ad-slot-banner { width: 100%; margin: 0 0 36px; }
-.ad-slot-sidebar { width: 100%; margin-bottom: 24px; }
-.ad-slot-mid { width: 100%; margin: 36px 0; }
-
+.support-banner .cashtag {
+  background: var(--ink);
+  color: var(--gold-lt);
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.support-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 22px 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.support-card .support-icon {
+  width: 40px; height: 40px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(192,138,32,0.08);
+  margin: 0 auto 12px;
+  color: var(--gold);
+  font-size: 18px;
+  font-weight: 700;
+}
+.support-card .support-icon-img {
+  width: 40px; height: 40px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+}
+.cashapp-icon-inline {
+  width: 20px; height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+  vertical-align: middle;
+  border: 1px solid var(--border);
+}
+.support-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+.support-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.55; margin-bottom: 14px; }
+.support-card .cashtag {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--gold-lt);
+  padding: 7px 16px;
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.support-callout {
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 6px;
+  padding: 32px 28px;
+  text-align: center;
+  margin: 36px 0;
+}
+.support-callout h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--paper); }
+.support-callout p { font-size: 0.9rem; color: rgba(250,246,238,0.72); max-width: 480px; margin: 0 auto 16px; font-style: italic; }
+.support-callout .cashtag {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 9px 22px;
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
 /* ── TOOL CARD ── */
 .tool-card {
   background: var(--card);
@@ -203,7 +271,6 @@ nav a:hover { color: var(--gold-lt); }
   border-radius: 6px;
   box-shadow: var(--shadow);
 }
-
 .drop-zone {
   padding: 44px 28px;
   text-align: center;
@@ -215,7 +282,6 @@ nav a:hover { color: var(--gold-lt); }
 }
 .drop-zone:hover, .drop-zone.drag-over { background: rgba(192,138,32,0.07); }
 .drop-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
-
 .drop-icon {
   width: 54px; height: 54px;
   border: 2px solid var(--gold);
@@ -227,7 +293,6 @@ nav a:hover { color: var(--gold-lt); }
 .drop-icon svg { stroke: var(--gold); fill: none; stroke-width: 1.8; width: 22px; height: 22px; stroke-linecap: round; stroke-linejoin: round; }
 .drop-title { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 5px; }
 .drop-sub { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.05em; }
-
 /* Settings */
 .settings-row {
   display: flex; flex-wrap: wrap; gap: 14px;
@@ -251,7 +316,6 @@ nav a:hover { color: var(--gold-lt); }
 }
 .field input:focus, .field select:focus { border-color: var(--gold); }
 .field select { width: auto; }
-
 /* File list */
 #fileList { padding: 0 24px; }
 .file-item {
@@ -267,16 +331,13 @@ nav a:hover { color: var(--gold-lt); }
 .file-name { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
 .file-meta { font-family: 'DM Mono', monospace; font-size: 10px; color: #8a7a5a; margin-top: 2px; }
 .file-status { font-family: 'DM Mono', monospace; font-size: 11px; white-space: nowrap; text-align: right; }
-
 /* Progress */
 .prog-wrap { height: 3px; background: rgba(192,138,32,0.14); margin: 6px 24px 0; display: none; }
 .prog-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--rust)); transition: width 0.25s; width: 0; }
-
 /* Note */
 .note { margin: 10px 24px 0; padding: 10px 14px; border-radius: 3px; font-family: 'DM Mono', monospace; font-size: 11px; line-height: 1.6; display: none; }
 .note.ok   { background: rgba(61,97,56,0.09); border-left: 3px solid var(--sage); color: #2e4a2b; }
 .note.warn { background: rgba(181,68,25,0.09); border-left: 3px solid var(--rust); color: #6e2810; }
-
 /* Actions */
 .actions { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; flex-wrap: wrap; gap: 10px; display: none; }
 .count-lbl { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); }
@@ -286,7 +347,6 @@ nav a:hover { color: var(--gold-lt); }
 .btn-go { background: var(--gold); color: var(--paper); }
 .btn-go:hover { background: #a87518; }
 .btn-go:disabled { background: #ccc; cursor: not-allowed; }
-
 /* ── SIDEBAR ── */
 .sidebar-section {
   background: var(--card);
@@ -307,7 +367,6 @@ nav a:hover { color: var(--gold-lt); }
   border-bottom: 1px solid var(--border);
   font-family: 'DM Mono', monospace;
 }
-
 /* Print size calculator */
 .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
 .calc-field { display: flex; flex-direction: column; gap: 4px; }
@@ -330,13 +389,11 @@ nav a:hover { color: var(--gold-lt); }
 .calc-result strong { color: var(--gold); }
 .btn-calc { width: 100%; margin-top: 10px; background: var(--ink); color: var(--paper); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; padding: 9px; border-radius: 3px; border: none; cursor: pointer; transition: background 0.15s; }
 .btn-calc:hover { background: #2e2616; }
-
 /* Tips list */
 .tip-list { list-style: none; }
 .tip-list li { font-size: 0.82rem; color: var(--muted); padding: 6px 0; border-bottom: 1px solid rgba(192,138,32,0.1); line-height: 1.5; }
 .tip-list li:last-child { border-bottom: none; }
 .tip-list li::before { content: "→ "; color: var(--gold); font-family: 'DM Mono', monospace; }
-
 /* ── SECTIONS BELOW TOOL ── */
 .section { margin-top: 56px; }
 .section h2 {
@@ -355,14 +412,12 @@ nav a:hover { color: var(--gold-lt); }
   background: var(--gold);
 }
 .section-sub { color: var(--muted); font-style: italic; font-size: 0.9rem; margin-bottom: 28px; }
-
 /* How it works steps */
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 24px; }
 .step { background: var(--card); border: 1px solid var(--border); border-radius: 5px; padding: 20px; }
 .step-num { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
 .step h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
 .step p { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
-
 /* FAQ */
 .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
 .faq-item:last-child { border-bottom: none; }
@@ -371,7 +426,6 @@ nav a:hover { color: var(--gold-lt); }
 .faq-item.open .faq-q::after { transform: rotate(45deg); }
 .faq-a { font-size: 0.88rem; color: var(--muted); line-height: 1.7; display: none; }
 .faq-item.open .faq-a { display: block; }
-
 /* ── FOOTER ── */
 footer {
   background: var(--ink);
@@ -385,13 +439,11 @@ footer {
 }
 footer a { color: rgba(232,197,106,0.7); text-decoration: none; }
 footer strong { color: var(--gold-lt); font-weight: 500; }
-
 /* ── UTILITY ── */
 .mono { font-family: 'DM Mono', monospace; }
 </style>
 </head>
 <body>
-
 <!-- NAV -->
 <header>
   <div class="nav-inner">
@@ -404,7 +456,6 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
     </nav>
   </div>
 </header>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">Free · No Sign-up · Runs in Browser</div>
@@ -417,22 +468,19 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
     <span class="pill">✓ No Upload Needed</span>
   </div>
 </section>
-
 <!-- PAGE BODY -->
 <div class="page-body">
-
   <!-- MAIN COLUMN -->
   <main>
-
-    <!-- TOP AD SLOT -->
-    <div class="ad-slot ad-slot-banner" style="text-align:center;padding:12px 0;">
-      <script>atOptions={'key':'6c97293ef0accddbb02a7409675ff562','format':'iframe','height':60,'width':468,'params':{}};</script>
-      <script src="https://www.highperformanceformat.com/6c97293ef0accddbb02a7409675ff562/invoke.js"></script>
+    <!-- SUPPORT BANNER (was top ad slot) -->
+    <div class="support-banner">
+      <img src="cashapplogo.jpeg" alt="CashApp" class="cashapp-icon-inline">
+      <span>Enjoying this tool? Support the site with a</span>
+      <span class="cashtag">$BradfordLamb</span>
+      <span>on CashApp</span>
     </div>
-
     <!-- TOOL -->
     <div id="tool" class="tool-card">
-
       <div class="drop-zone" id="dropZone">
         <input type="file" id="fileInput" accept="image/png,image/jpeg,image/jpg,image/webp,image/bmp,image/gif" multiple>
         <div class="drop-icon">
@@ -441,7 +489,6 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
         <div class="drop-title">Drop images here or click to browse</div>
         <div class="drop-sub">PNG · JPG · JPEG · WEBP · BMP · GIF — multiple files supported</div>
       </div>
-
       <div class="settings-row">
         <div class="field">
           <label for="srcDpi">Source DPI</label>
@@ -463,7 +510,6 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
           </select>
         </div>
       </div>
-
       <div id="fileList"></div>
       <div class="prog-wrap" id="progWrap"><div class="prog-fill" id="progFill"></div></div>
       <div class="note" id="note"></div>
@@ -474,17 +520,13 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
           <button class="btn btn-go" id="goBtn" onclick="processAll()">Upscale &amp; Download All</button>
         </div>
       </div>
-
     </div><!-- /tool-card -->
-
-    <!-- MID AD SLOT -->
-    <div class="ad-slot ad-slot-mid">
-      <div style="text-align:center;padding:12px 0;">
-        <script>atOptions={'key':'6c97293ef0accddbb02a7409675ff562','format':'iframe','height':60,'width':468,'params':{}};</script>
-        <script src="https://www.highperformanceformat.com/6c97293ef0accddbb02a7409675ff562/invoke.js"></script>
-      </div>
+    <!-- SUPPORT CALLOUT (was mid ad slot) -->
+    <div class="support-callout">
+      <h3>If this tool has been helpful...</h3>
+      <p>This upscaler is free to use, with no sign-up and no uploads. If it saved you time getting your KDP files print-ready, consider chipping in a dollar or two to help keep it running.</p>
+      <span class="cashtag">CashApp $BradfordLamb</span>
     </div>
-
     <!-- HOW IT WORKS -->
     <section class="section" id="how-it-works">
       <h2>How It Works</h2>
@@ -512,12 +554,10 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
         </div>
       </div>
     </section>
-
     <!-- FAQ -->
     <section class="section" id="faq">
       <h2>Frequently Asked Questions</h2>
       <p class="section-sub">Everything you need to know about DPI and KDP image requirements.</p>
-
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">What DPI does KDP require for print books?</div>
         <div class="faq-a">Amazon KDP recommends a minimum of <strong>300 DPI</strong> for interior images and <strong>300–600 DPI</strong> for book covers. For the sharpest results — especially for detailed illustrations or photos — 600 DPI is ideal. Images below 300 DPI may appear blurry or pixelated in print.</div>
@@ -547,20 +587,16 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
         <div class="faq-a">Yes! You can drag and drop as many images as you need in one go. All files will be processed and downloaded sequentially. Each output file is renamed with the target DPI appended (e.g., <span class="mono">cover_600dpi.png</span>).</div>
       </div>
     </section>
-
   </main><!-- /main -->
-
   <!-- SIDEBAR -->
   <aside class="sidebar">
-
-    <!-- Sidebar Ad -->
-    <div class="ad-slot ad-slot-sidebar">
-      <!-- Google AdSense 300×250 -->
-      <!-- <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins> -->
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-      Advertisement
+    <!-- Support card (was sidebar ad slot) -->
+    <div class="support-card">
+      <img src="cashapplogo.jpeg" alt="CashApp" class="support-icon-img">
+      <h4>Support This Tool</h4>
+      <p>Free, no ads, no uploads. If it's been useful, a small donation helps keep it that way.</p>
+      <span class="cashtag">$BradfordLamb</span>
     </div>
-
     <!-- Print Size Calculator -->
     <div class="sidebar-section" id="calculator">
       <h3>Print Size Calculator</h3>
@@ -587,7 +623,6 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
       <button class="btn-calc" onclick="calcSize()">Calculate Print Size</button>
       <div class="calc-result" id="calcResult" style="margin-top:12px;display:none;"></div>
     </div>
-
     <!-- KDP Tips -->
     <div class="sidebar-section">
       <h3>KDP Image Tips</h3>
@@ -601,18 +636,8 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
         <li>Always preview your book before publishing</li>
       </ul>
     </div>
-
-    <!-- Second sidebar ad -->
-    <div class="ad-slot ad-slot-sidebar">
-      <!-- Google AdSense 300×250 -->
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-      Advertisement
-    </div>
-
   </aside>
-
 </div><!-- /page-body -->
-
 <!-- FOOTER -->
 <footer>
   <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
@@ -621,10 +646,8 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
   This tool is not affiliated with Amazon or Kindle Direct Publishing.<br>
   "KDP" and "Kindle" are trademarks of Amazon.com, Inc.
 </footer>
-
 <script>
 // ── UPSCALER LOGIC ──────────────────────────────────────────────────────────
-
 const dropZone  = document.getElementById('dropZone');
 const fileInput = document.getElementById('fileInput');
 const fileList  = document.getElementById('fileList');
@@ -634,17 +657,13 @@ const noteEl    = document.getElementById('note');
 const actionsEl = document.getElementById('actions');
 const countLbl  = document.getElementById('countLbl');
 const goBtn     = document.getElementById('goBtn');
-
 let files = [];
-
 // Drag & drop
 dropZone.addEventListener('dragover',  e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
 dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
 dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); handleFiles(e.dataTransfer.files); });
 fileInput.addEventListener('change', () => { handleFiles(fileInput.files); fileInput.value = ''; });
-
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
 function readDataUrl(file) {
   return new Promise((res, rej) => {
     const r = new FileReader();
@@ -653,7 +672,6 @@ function readDataUrl(file) {
     r.readAsDataURL(file);
   });
 }
-
 function loadImageFromDataUrl(dataUrl) {
   return new Promise((res, rej) => {
     const img = new Image();
@@ -662,7 +680,6 @@ function loadImageFromDataUrl(dataUrl) {
     img.src = dataUrl;
   });
 }
-
 async function handleFiles(fileList_) {
   const imgs = Array.from(fileList_).filter(f => f.type.startsWith('image/'));
   if (!imgs.length) return;
@@ -679,7 +696,6 @@ async function handleFiles(fileList_) {
   files = [...files, ...entries.filter(e => !ids.has(e.id))];
   render();
 }
-
 function render() {
   const src = parseFloat(document.getElementById('srcDpi').value) || 72;
   const tgt = parseFloat(document.getElementById('tgtDpi').value) || 600;
@@ -705,31 +721,25 @@ function render() {
   countLbl.textContent = files.length + ' image' + (files.length !== 1 ? 's' : '') + ' · ' + (isFinite(scale) ? scale.toFixed(2) : '—') + '× scale';
   actionsEl.style.display = files.length ? 'flex' : 'none';
 }
-
 function setStatus(i, status, color, label) {
   const el = document.getElementById('st-' + i);
   if (el) { el.style.color = color; el.style.fontWeight = status !== 'pending' ? 600 : 400; el.textContent = label; }
 }
-
 async function processAll() {
   const src   = parseFloat(document.getElementById('srcDpi').value);
   const tgt   = parseFloat(document.getElementById('tgtDpi').value);
   const fmt   = document.getElementById('fmt').value;
   const qual  = parseFloat(document.getElementById('quality').value) / 100;
   const ext   = fmt === 'image/png' ? 'png' : 'jpg';
-
   if (!src || !tgt || src <= 0 || tgt <= 0) { showNote(false, 'Please enter valid DPI values.'); return; }
   if (src >= tgt) { showNote(false, `Source DPI (${src}) must be less than Target DPI (${tgt}).`); return; }
-
   const scale = tgt / src;
   goBtn.disabled = true;
   progWrap.style.display = 'block';
   noteEl.style.display = 'none';
   progFill.style.width = '0%';
-
   let done = 0;
   const snap = [...files];
-
   for (let i = 0; i < snap.length; i++) {
     const item = snap[i];
     if (!item.dataUrl) { continue; }
@@ -760,7 +770,6 @@ async function processAll() {
     progFill.style.width = Math.round(((i+1)/snap.length)*100) + '%';
     await sleep(50);
   }
-
   goBtn.disabled = false;
   progWrap.style.display = 'none';
   showNote(done > 0,
@@ -769,13 +778,11 @@ async function processAll() {
       : 'No images were processed successfully. Please try again.'
   );
 }
-
 function showNote(ok, msg) {
   noteEl.className = 'note ' + (ok ? 'ok' : 'warn');
   noteEl.textContent = msg;
   noteEl.style.display = 'block';
 }
-
 function clearAll() {
   files = [];
   fileList.innerHTML = '';
@@ -784,10 +791,8 @@ function clearAll() {
   progWrap.style.display = 'none';
   fileInput.value = '';
 }
-
 ['srcDpi','tgtDpi','fmt','quality'].forEach(id =>
   document.getElementById(id).addEventListener('change', render));
-
 // ── PRINT SIZE CALCULATOR ───────────────────────────────────────────────────
 function calcSize() {
   const w   = parseFloat(document.getElementById('calcW').value);
@@ -810,7 +815,6 @@ function calcSize() {
     <strong>${mmW} × ${mmH} mm</strong>${needFor300}
   `;
 }
-
 // ── FAQ TOGGLE ──────────────────────────────────────────────────────────────
 function toggleFaq(el) {
   el.closest('.faq-item').classList.toggle('open');
