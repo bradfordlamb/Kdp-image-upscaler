@@ -11,5 +11,5 @@ Published URLs:
 - https://kdpimageupscaler.com/articles/*.html
 
 Root copies of the old article filenames redirect to /articles/<same-name>.html.
-The contact page contains the placeholder CONTACT_EMAIL_HERE until a real address is added.
+The contact email is blambinvestmentsllc@gmail.com.
 Do not change CNAME.
