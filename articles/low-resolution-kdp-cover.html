@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Fix a Low Resolution KDP Cover</title>
+<meta name="description" content="Fix a low-resolution KDP paperback cover by rebuilding the full wrap at 300 DPI instead of stretching an ebook image.">
+<link rel="canonical" href="https://kdpimageupscaler.com/articles/low-resolution-kdp-cover.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-9233848085324298">
+<meta property="og:title" content="How to Fix a Low Resolution KDP Cover">
+<meta property="og:description" content="Fix a low-resolution KDP paperback cover by rebuilding the full wrap at 300 DPI instead of stretching an ebook image.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kdpimageupscaler.com/articles/low-resolution-kdp-cover.html">
+<meta property="og:image" content="https://kdpimageupscaler.com/favicon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site-pages.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Fix a Low Resolution KDP Cover",
+  "description": "Fix a low-resolution KDP paperback cover by rebuilding the full wrap at 300 DPI instead of stretching an ebook image.",
+  "url": "https://kdpimageupscaler.com/articles/low-resolution-kdp-cover.html",
+  "mainEntityOfPage": "https://kdpimageupscaler.com/articles/low-resolution-kdp-cover.html",
+  "author": {
+    "@type": "Person",
+    "name": "Brad Lamb"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KDP Image Upscaler"
+  },
+  "dateModified": "2026-11-27"
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">KDP <span>Image</span> Upscaler</a>
+    <nav>
+      <a href="/#tool">Tool</a>
+      <a href="/#guides">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<h1>How to Fix a Low Resolution KDP Cover</h1>
+<p>A low-resolution KDP paperback cover is almost always a front-cover image that was designed at ebook size and then stretched across a full wrap. KDP wants the wrap — back, spine, and front, plus bleed — at 300 DPI or better. An ebook marketing image is a different file. Its ideal size is 2,560 pixels tall by 1,600 pixels wide, which is not a 300 DPI paperback wrap for any trim KDP sells. The repair is to rebuild the wrap at the right inch size, and to place artwork that already has the pixels that size requires.</p>
+<p>KDP's image page defines low resolution as under 200 DPI, calculated as pixels divided by inches. The paperback guidelines say every cover image should be at least 300 DPI, and they recommend a maximum of 600 DPI so the PDF stays under 650 MB. A cover that "says" 300 DPI in a properties panel can still be low resolution if someone edited the tag. KDP says that edit does not add pixels. Measure the wrap.</p>
+
+<h2>Find the wrap size before you touch the art</h2>
+<p>The formulas on the submission guidelines are:</p>
+<p class="formula">width = 0.125 in bleed + trim width + spine + trim width + 0.125 in bleed<br>height = 0.125 in + trim height + 0.125 in</p>
+<p>Spine width is the page count times a paper factor: 0.002252 inch on white paper, 0.0025 inch on cream, 0.00235 inch on groundwood, and 0.002347 inch on color paper. A 6 × 9 inch, 200-page, white-paper book has a spine of 200 × 0.002252 = 0.4504 inch. The wrap is 12.7004 inches wide and 9.25 inches tall. At 300 DPI that is 3,811 × 2,775 pixels after you round the fractional width up. The <a href="/articles/kdp-cover-size-calculator.html">cover calculator guide</a> shows the same example on cream paper, which is a different spine and a different file. Download KDP's template for your trim, page count, and paper. If your total and the template differ, build on the template.</p>
+<p>Compare that pixel size with the file you have. A 1,600 × 2,560 ebook cover is about 1,600 ÷ 12.7 ≈ 126 DPI if someone stretches it across the 12.7-inch width, and it is the wrong shape: the ebook image is a tall front cover, and the wrap is a wide landscape. Even used only on the front panel, 1,600 × 2,560 is short of a 6 × 9 front cover at 300 DPI, which is 1,800 × 2,700, and it includes no bleed.</p>
+
+<h2>Why stretching inside the design tool makes it worse</h2>
+<p>KDP's Kindle cover page says not to stretch an image up to the recommended size, because the stretch lowers quality. The print image page says the same thing in different words: do not enlarge a picture after you insert it, and changing the DPI reading does not add dots. Dragging a corner handle in a layout program is that enlargement. The PDF then embeds a small bitmap drawn large. The previewer flags it, and the printed cover looks soft, especially in the title.</p>
+<p>Upscaling the original artwork, before it is placed, is a different step. It builds a larger pixel grid by interpolation. It can clear a pixel-count test. It cannot invent serifs, skin texture, or a sharp logo from a tiny source. If the only artwork you have is the ebook JPEG, say so honestly and either commission or redraw the cover at the wrap size, or print from a master that was larger than the ebook export. KDP's own suggestion for raising image quality is a new capture or a print-quality stock file, or printing the image smaller. A cover cannot be printed smaller than the wrap. The trim is fixed. So the master has to grow, or you live with a soft cover.</p>
+
+<h2>A rebuild that matches the guidelines</h2>
+<ol>
+  <li>Lock the interior. Page count and paper type change the spine. Rebuilding the cover before the interior is final means you will rebuild it again.</li>
+  <li>Download the KDP template for that trim, page count, and paper. Set the document to the template's pixel size at 300 DPI. One flattened image, centered on the spine.</li>
+  <li>Place the front-cover art at the panel size plus bleed. If a painting needs to be 6.25 inches wide including a bit of bleed, it needs at least 6.25 × 300 = 1,875 pixels across. If your painting is 1,200 pixels wide, effective DPI at 6.25 inches is 1,200 ÷ 6.25 = 192, which is under 200. That piece is low resolution. Resample it only as a bridge, or replace it.</li>
+  <li>If you resample with the tool on this site, set Source DPI to that effective DPI (192) and Target DPI to 300. The scale is about 1.56, and the width becomes 1,875 pixels. Leaving the source at 72 would scale by 300 ÷ 72 ≈ 4.17 and make a much larger, no sharper file. The tool does not write a DPI tag. Check pixels, not the tag. The <a href="/articles/kdp-image-resizer.html">resizer guide</a> is the exact behavior.</li>
+  <li>Keep type at least 0.25 inch inside the outer trim. Spine text is allowed only above 79 pages, and it needs 0.0625 inch of space to each spine edge, plus 0.0625 inch of binding variance on the folds. Do not put the title on the fold.</li>
+  <li>Leave the barcode area on the lower back cover empty unless you are supplying your own barcode. If you omit one, KDP adds it.</li>
+  <li>Flatten layers and transparency. Embed fonts. Export a PDF with no crop marks, trim marks, comments, or placeholder text. Confirm the PDF is under 650 MB.</li>
+</ol>
+<div class="cta">
+  <p><strong>Resample the artwork, not a screenshot of the whole wrap.</strong> A screenshot of your design is already the wrong pixel size. Go back to the original painting or photo.</p>
+  <a class="button" href="/#tool">Open the upscaler</a>
+</div>
+
+<h2>Checks that catch a cover that will still fail</h2>
+<ul>
+  <li>The front cover has no title. KDP lists a missing title among common failures.</li>
+  <li>The file is a spread with crop marks from a printer preset. Those marks are disallowed, and they shift the trim.</li>
+  <li>The spine was calculated for white paper and the book is set to cream, or the page count changed after the cover was exported.</li>
+  <li>The ebook JPEG, the print wrap, and a 3D mockup got mixed up at upload. The print slot wants the wrap PDF. The Kindle slot wants the front image only, with no spine, barcode, or back cover.</li>
+  <li>Small type was rasterized from a 72 DPI comp. At 300 DPI on a 9-inch cover, 72 DPI art is less than a quarter of the pixels you need (300 ÷ 72 ≈ 4.17 times too few on each side). Rebuild the type as live text, or rasterize it at the final pixel size.</li>
+  <li>The previewer warns, and the pixel math also says you are under 300. Believe both. If the math says you are over 300 and the previewer warns, the placed size inside the PDF is larger than the size you measured, or the embedded image was swapped for a smaller one on export.</li>
+</ul>
+<p>Order a printed proof before the book goes on sale. KDP's image page recommends that, and a cover is the page a buyer sees first. On-screen zoom is a useful check for pixels. It is not the same as toner or ink on the paper stock you selected.</p>
+<p>If the artwork is a photograph and you are choosing the export format after the resample, use a high-quality JPEG once. If the cover is mostly type and flat color, use PNG inside the design file, then the PDF. Either way, flatten. Format tradeoffs are in <a href="/articles/kdp-png-vs-jpg.html">PNG vs JPG</a>.</p>
+
+<h2>Sources</h2>
+<ul>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G201857950">Paperback Submission Guidelines</a> — wrap formula, 300 DPI minimum, 600 DPI suggestion, spine text, barcode, and file failures.</li>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G202169030">Format Images in Your Book</a> — low resolution under 200 DPI, and why a DPI tag edit does not add pixels.</li>
+  <li><a href="https://kdp.amazon.com/en_US/cover-templates">KDP cover calculator and templates</a></li>
+</ul>
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/articles/kdp-cover-size-calculator.html">Cover size calculator guide</a></li>
+  <li><a href="/articles/kindle-cover-resolution-guide.html">Kindle cover resolution</a></li>
+  <li><a href="/articles/blurry-kdp-images.html">Why images look blurry</a></li>
+</ul>
+
+</main>
+<footer>
+  <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
+  Image processing runs in your browser. Your images are not uploaded.<br>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="/about.html">About</a> ·
+  <a href="/contact.html">Contact</a> ·
+  <a href="/terms.html">Terms</a> ·
+  <a href="/#guides">Guides</a><br><br>
+  This site is not affiliated with Amazon or Kindle Direct Publishing.<br>
+  "KDP" and "Kindle" are trademarks of Amazon.com, Inc.
+</footer>
+</body>
+</html>

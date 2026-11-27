@@ -1,22 +1,15 @@
-UPLOAD INSTRUCTIONS
+This repository is the GitHub Pages site for https://kdpimageupscaler.com/.
+Pages publishes the repository root (branch main). Do not move the site into a subfolder.
 
-Drag these into your GitHub repo:
+Published URLs:
+- https://kdpimageupscaler.com/  (index.html, the upscaler)
+- https://kdpimageupscaler.com/ads.txt
+- https://kdpimageupscaler.com/privacy.html
+- https://kdpimageupscaler.com/about.html
+- https://kdpimageupscaler.com/contact.html
+- https://kdpimageupscaler.com/terms.html
+- https://kdpimageupscaler.com/articles/*.html
 
-1) articles folder
-2) sitemap.xml
-3) robots.txt
-
-Keep your existing:
-- index.html
-- favicon.png
-
-Your article URLs will be:
-https://kdpimageupscaler.com/articles/best-dpi-for-kdp.html
-https://kdpimageupscaler.com/articles/300-vs-600-dpi-kdp.html
-https://kdpimageupscaler.com/articles/blurry-kdp-images.html
-
-After uploading:
-1) Commit changes
-2) Go to Google Search Console
-3) Submit sitemap:
-https://kdpimageupscaler.com/sitemap.xml
+Root copies of the old article filenames redirect to /articles/<same-name>.html.
+The contact page contains the placeholder CONTACT_EMAIL_HERE until a real address is added.
+Do not change CNAME.
