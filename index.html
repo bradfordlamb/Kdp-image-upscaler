@@ -3,7 +3,8 @@
 <head>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298"
      crossorigin="anonymous"></script>
-</head>
+<meta name="google-adsense-account" content="ca-pub-9233848085324298">
+<link rel="canonical" href="https://kdpimageupscaler.com/">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -17,6 +18,7 @@
 <meta property="og:title" content="KDP Image Upscaler — Free 300 DPI Upscaler for Kindle Direct Publishing">
 <meta property="og:description" content="Instantly upscale your images to 300 DPI for Amazon KDP print publishing. Free, fast, private — runs entirely in your browser.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://kdpimageupscaler.com/">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -171,6 +173,9 @@ nav a:hover { color: var(--gold-lt); }
 @media (max-width: 800px) {
   .page-body { grid-template-columns: 1fr; }
   .sidebar { order: -1; }
+  .nav-inner { height: auto; min-height: 56px; flex-wrap: wrap; padding: 10px 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  nav a { margin-left: 0; }
 }
 /* ── SUPPORT / DONATION BANNERS ── */
 .support-banner {
@@ -422,6 +427,19 @@ nav a:hover { color: var(--gold-lt); }
 .step-num { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
 .step h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
 .step p { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+.guide-list { display: grid; gap: 12px; }
+.guide-list a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.guide-list a:hover { border-color: var(--gold); }
+.guide-list strong { display: block; font-size: 0.98rem; margin-bottom: 4px; }
+.guide-list span { display: block; font-size: 0.82rem; color: var(--muted); line-height: 1.5; font-style: normal; }
 /* FAQ */
 .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
 .faq-item:last-child { border-bottom: none; }
@@ -454,6 +472,7 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
     <a href="#" class="nav-logo">KDP <span>Image</span> Upscaler</a>
     <nav>
       <a href="#tool">Tool</a>
+      <a href="#guides">Guides</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#calculator">Calculator</a>
       <a href="#faq">FAQ</a>
@@ -544,7 +563,7 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
         <div class="step">
           <div class="step-num">Step 02</div>
           <h4>Set Your DPI</h4>
-          <p>Enter your source DPI (usually 72 for screen images) and set the target to 300 DPI — KDP's required minimum.</p>
+          <p>Enter the image's current effective DPI (72 is typical for a screen graphic) and a target of 300 DPI, the minimum KDP states for print images.</p>
         </div>
         <div class="step">
           <div class="step-num">Step 03</div>
@@ -556,6 +575,23 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
           <h4>Stays in Your Browser</h4>
           <p>All processing happens locally using the HTML5 Canvas API. Your images never leave your device.</p>
         </div>
+      </div>
+    </section>
+    <!-- GUIDES -->
+    <section class="section" id="guides">
+      <h2>Guides</h2>
+      <p class="section-sub">Notes on KDP image size, DPI, and file format. These pages explain the requirements and how this browser tool behaves. Confirm the current rules on Amazon's KDP Help pages before you upload.</p>
+      <div class="guide-list">
+        <a href="/articles/kdp-image-requirements.html"><strong>KDP image requirements for print books</strong><span>DPI, file size, bleed, margins, flattening, and which formats go in a paperback interior or cover.</span></a>
+        <a href="/articles/best-dpi-for-kdp.html"><strong>Best DPI for KDP covers and interiors</strong><span>How to turn a print size in inches into the pixel count KDP's 300 DPI minimum actually requires.</span></a>
+        <a href="/articles/300-vs-600-dpi-kdp.html"><strong>300 vs 600 DPI</strong><span>When the extra pixels are worth the larger file, and why KDP's paperback guidelines suggest a 600 DPI ceiling.</span></a>
+        <a href="/articles/jpg-to-300-dpi-kdp.html"><strong>Convert a JPG to 300 DPI</strong><span>A pixel-first workflow, including when you should leave a file alone.</span></a>
+        <a href="/articles/blurry-kdp-images.html"><strong>Why KDP images look blurry</strong><span>How to tell a short pixel count from a soft photograph, a heavy JPEG, or an image stretched in the manuscript.</span></a>
+        <a href="/articles/kdp-png-vs-jpg.html"><strong>PNG vs JPG for KDP</strong><span>Which format fits photos, line art, and text, and what this tool can export.</span></a>
+        <a href="/articles/kdp-image-resizer.html"><strong>Resize images for KDP print</strong><span>What the upscaler on this site actually does: canvas resampling, no DPI tag, no downscale.</span></a>
+        <a href="/articles/kdp-cover-size-calculator.html"><strong>KDP cover size calculator guide</strong><span>Full-wrap width, spine formulas, bleed, and how many pixels that cover needs at 300 DPI.</span></a>
+        <a href="/articles/low-resolution-kdp-cover.html"><strong>Fix a low-resolution KDP cover</strong><span>Why an ebook-sized cover goes soft on a paperback wrap, and how to rebuild the file.</span></a>
+        <a href="/articles/kindle-cover-resolution-guide.html"><strong>Kindle cover resolution</strong><span>The ebook cover pixel size, the two KDP help pages that disagree, and a file that satisfies both.</span></a>
       </div>
     </section>
     <!-- FAQ -->
@@ -580,7 +616,7 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Is my image data safe? Does anything get uploaded?</div>
-        <div class="faq-a">Absolutely nothing is uploaded. All processing happens entirely in your web browser using the HTML5 Canvas API. Your images never leave your device and are never sent to any server. This tool works offline once the page is loaded.</div>
+        <div class="faq-a">The upscaler does not upload images. Processing happens in your web browser with the HTML5 Canvas API, and the file is downloaded to your device. Advertising on the page is separate: Google AdSense may set cookies. Details are in the <a href="/privacy.html">privacy policy</a>.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">What source DPI should I enter if I don't know my image's DPI?</div>
@@ -598,7 +634,7 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
     <div class="support-card">
       <img src="cashapplogo.jpeg" alt="CashApp" class="support-icon-img">
       <h4>Support This Tool</h4>
-      <p>Free, no ads, no uploads. If it's been useful, a small donation helps keep it that way.</p>
+      <p>Free to use, and your images stay on your device. If it has been useful, a small donation helps keep it running.</p>
       <span class="cashtag">$BradfordLamb</span>
     </div>
     <!-- Print Size Calculator -->
@@ -632,11 +668,11 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
       <h3>KDP Image Tips</h3>
       <ul class="tip-list">
         <li>Use 300 DPI minimum for interior images</li>
-        <li>Use 600 DPI for book covers for best quality</li>
-        <li>Save covers as TIFF or high-quality JPEG</li>
+        <li>Print images: at least 300 DPI. KDP suggests not exceeding 600 DPI</li>
+        <li>Custom paperback covers are uploaded as a PDF</li>
         <li>Use PNG for images with text or sharp lines</li>
-        <li>sRGB color profile is required by KDP</li>
-        <li>KDP cover size: 2,560 × 1,600 px (eBook)</li>
+        <li>Kindle ebook covers: RGB. KDP converts CMYK files</li>
+        <li>Kindle cover ideal size: 2,560 px tall by 1,600 px wide</li>
         <li>Always preview your book before publishing</li>
       </ul>
     </div>
@@ -645,7 +681,12 @@ footer strong { color: var(--gold-lt); font-weight: 500; }
 <!-- FOOTER -->
 <footer>
   <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
-  All image processing happens locally in your browser. No data is collected or uploaded.<br>
+  Image processing runs in your browser. Your images are not uploaded.<br>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="/about.html">About</a> ·
+  <a href="/contact.html">Contact</a> ·
+  <a href="/terms.html">Terms</a> ·
+  <a href="/#guides">Guides</a><br>
   <br>
   This tool is not affiliated with Amazon or Kindle Direct Publishing.<br>
   "KDP" and "Kindle" are trademarks of Amazon.com, Inc.

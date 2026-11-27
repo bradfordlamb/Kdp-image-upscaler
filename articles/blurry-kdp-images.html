@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your KDP Images Look Blurry and How to Fix Them</title>
+<meta name="description" content="Diagnose blurry KDP images: pixel count versus placed size, soft focus, JPEG compression, and enlargement in the manuscript.">
+<link rel="canonical" href="https://kdpimageupscaler.com/articles/blurry-kdp-images.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-9233848085324298">
+<meta property="og:title" content="Why Your KDP Images Look Blurry and How to Fix Them">
+<meta property="og:description" content="Diagnose blurry KDP images: pixel count versus placed size, soft focus, JPEG compression, and enlargement in the manuscript.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kdpimageupscaler.com/articles/blurry-kdp-images.html">
+<meta property="og:image" content="https://kdpimageupscaler.com/favicon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site-pages.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Your KDP Images Look Blurry and How to Fix Them",
+  "description": "Diagnose blurry KDP images: pixel count versus placed size, soft focus, JPEG compression, and enlargement in the manuscript.",
+  "url": "https://kdpimageupscaler.com/articles/blurry-kdp-images.html",
+  "mainEntityOfPage": "https://kdpimageupscaler.com/articles/blurry-kdp-images.html",
+  "author": {
+    "@type": "Person",
+    "name": "Brad Lamb"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KDP Image Upscaler"
+  },
+  "dateModified": "2026-11-27"
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">KDP <span>Image</span> Upscaler</a>
+    <nav>
+      <a href="/#tool">Tool</a>
+      <a href="/#guides">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<h1>Why Your KDP Images Look Blurry and How to Fix Them</h1>
+<p>A KDP image looks blurry in print for a small set of reasons, and they are not the same fix. The common ones are a pixel grid that is too small for the placed size, a photograph that was already soft, JPEG compression, or an image that was sharp until the layout stretched it. KDP's image guide separates those cases. It defines low resolution as fewer than 200 DPI, and it says a file can report 300 DPI and still look pixelated when the DPI tag was edited or the picture is out of focus.</p>
+<p>Start with the measurement KDP prints in that guide. Divide pixel width by the width in inches, and pixel height by the height in inches. Their example is a 1,200 × 1,800 image placed at 4 × 6 inches: 1,200 ÷ 4 = 300 and 1,800 ÷ 6 = 300, so the file is 300 DPI at that size. If your division comes out under 200, you have the condition they call low resolution. If it comes out at 300 and the preview is still mushy, the pixels are not the shortage. Something else is.</p>
+
+<h2>The pixel count is too small for the rectangle</h2>
+<p>Screen graphics are often built around 72 DPI. A banner that is 720 pixels wide is 10 inches at 72 DPI and only 2.4 inches at 300 DPI (720 ÷ 300 = 2.4). Authors then drop that banner into a chapter and drag it to the width of the text block. On a 6 × 9 inch book with KDP's minimum margins for 151–300 pages and no bleed, the text block is 5.25 inches wide. The same 720-pixel image at 5.25 inches is 720 ÷ 5.25 ≈ 137 DPI. That is under 200. The previewer is reporting a real shortage.</p>
+<p>Screenshots behave the same way. A window captured on a laptop is sharp on that laptop and short of pixels once it is asked to fill a printed page. KDP's suggested remedies are to recapture at a higher resolution, to buy a print-quality stock file, or to print the image smaller so the pixels you have cover fewer inches. Reducing the placed size raises effective DPI without any resampling. A 720-pixel image printed 2.4 inches wide is 300 DPI. If the design can live at that size, that is the cleanest fix.</p>
+
+<h2>The layout stretched a file that used to be enough</h2>
+<p>KDP's image instructions say to insert pictures at their original size and not to enlarge them afterward, because enlargement lowers resolution. Word and similar editors also compress images unless you turn that off. The path they document is File, Options, Advanced, Image Size and Quality, then check "Do not compress images in file." Insert with the Insert Pictures command rather than pasting. A paste can hand the document a display-resolution bitmap.</p>
+<p>After you export the interior PDF, you can still check a suspect figure. Open the PDF, select the image, and read its pixel size if your viewer shows it. Divide by the inches it occupies on the page, not by the inches in the original JPEG. The placed size is what the press uses. Bleed images have to be measured on the bleed box. A 6 × 9 inch page with interior bleed is 6.125 inches wide and 9.25 inches tall, because KDP adds 0.125 inches of width and 0.25 inches of height.</p>
+
+<h2>The photograph was soft, or the JPEG was crushed</h2>
+<p>Focus, motion blur, and a heavy JPEG survive any DPI tag. KDP says that if the image claims 300 DPI and still looks pixelated, either the tag was altered or the image is out of focus, and altering the tag cannot add pixels. Look at the file at 100 percent zoom before you do anything else. If edges are already doubled or the sky is full of blocks, those blocks will print. A later resample blends the blocks into larger blocks. It does not return the missing detail.</p>
+<p>Repeated JPEG saves make this worse. Each save quantizes the color again. Keep a PNG or a TIFF of illustrations and a single high-quality JPEG of photographs. This site's tool exports JPEG at the Quality percent you type, divided by 100, using the canvas JPEG encoder. The default in the form is 95. PNG export ignores that slider and writes a lossless PNG. Neither export invents focus. The <a href="/articles/kdp-png-vs-jpg.html">PNG versus JPG guide</a> covers which one to download.</p>
+
+<h2>Transparency and layers that preview fine</h2>
+<p>A separate failure looks like blur or a dirty halo rather than a low pixel count. KDP says images with transparency can print with a slightly different color in the transparent areas than you see on screen. The fix they give is to flatten layers in the final file, and for cover art to flatten everything into one 300 DPI image. Do that in the program that built the file, then export. The upscaler on this site draws onto a canvas and exports PNG or JPEG. A JPEG has no alpha channel. A PNG from the canvas can still carry transparency if the source did. Flatten before you rely on it for a cover.</p>
+
+<h2>When resampling is the right next step</h2>
+<p>Resample only after the measurement says the pixel count is short and you cannot get a better original or a smaller placement. Compute the missing scale. Required pixels are inches times 300. Current pixels divided into required pixels is the scale. The tool on the homepage applies scale as target DPI divided by source DPI. Put the effective DPI in the source field and 300 in the target field so the scale matches the gap you calculated. The method is interpolation with canvas smoothing quality set to high. Edges get a bit of anti-aliasing. Fine text does not become legible if it was not legible at 100 percent zoom.</p>
+<div class="cta">
+  <p><strong>Measure first.</strong> If pixels ÷ inches is already 300 or higher, the blur is focus, compression, or a stretch in the layout. The upscaler will not correct those.</p>
+  <a class="button" href="/#tool">Open the upscaler</a>
+</div>
+<p>A file that fails in the browser because the scaled canvas is enormous is a sign the scale factor is too aggressive, usually because source DPI was left at 72 for an image that was not a 72 DPI placement. Recalculate effective DPI and try again with that number. Details of the form, including the rule that source DPI must be lower than target DPI, are in the <a href="/articles/kdp-image-resizer.html">resizer guide</a>.</p>
+
+<h2>A short diagnostic order</h2>
+<ol>
+  <li>View the original at 100 percent. If it is soft there, replace it or print it smaller. Resampling will not focus it.</li>
+  <li>Divide pixels by the placed inches in the manuscript, not by a DPI number in a properties panel.</li>
+  <li>If the result is under 300, and under 200 in particular, you are in the range KDP calls low resolution. Get a larger original, shrink the placement, or resample up to inches × 300.</li>
+  <li>Confirm Word or your layout tool is not compressing or enlarging the image after insertion.</li>
+  <li>Flatten transparency on anything that will be printed, especially covers.</li>
+  <li>Export the interior as a PDF when any image bleeds. KDP requires PDF for bleed manuscripts. Other interiors may be DOC, DOCX, RTF, HTML, or TXT, and KDP converts those to PDF.</li>
+  <li>Read the previewer warning against the measurement. Then order a proof for a cover or any image the book cannot afford to get wrong. KDP's image page recommends a proof copy before the book goes on sale.</li>
+</ol>
+
+<h2>Sources</h2>
+<ul>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G202169030">Format Images in Your Book</a> — the 1,200 × 1,800 at 4 × 6 example, the definition of low resolution, and the note on altered DPI tags.</li>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G201857950">Paperback Submission Guidelines</a> — 300 DPI minimum, bleed page size, and which manuscript formats are accepted.</li>
+</ul>
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/articles/jpg-to-300-dpi-kdp.html">Convert a JPG to 300 DPI</a></li>
+  <li><a href="/articles/best-dpi-for-kdp.html">Best DPI for KDP</a></li>
+  <li><a href="/articles/low-resolution-kdp-cover.html">Fix a low-resolution cover</a></li>
+</ul>
+
+</main>
+<footer>
+  <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
+  Image processing runs in your browser. Your images are not uploaded.<br>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="/about.html">About</a> ·
+  <a href="/contact.html">Contact</a> ·
+  <a href="/terms.html">Terms</a> ·
+  <a href="/#guides">Guides</a><br><br>
+  This site is not affiliated with Amazon or Kindle Direct Publishing.<br>
+  "KDP" and "Kindle" are trademarks of Amazon.com, Inc.
+</footer>
+</body>
+</html>

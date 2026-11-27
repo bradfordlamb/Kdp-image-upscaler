@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — KDP Image Upscaler</title>
+<meta name="description" content="Privacy policy for kdpimageupscaler.com: browser-only image processing, Google AdSense cookies, and Google Fonts.">
+<link rel="canonical" href="https://kdpimageupscaler.com/privacy.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-9233848085324298">
+<meta property="og:title" content="Privacy Policy — KDP Image Upscaler">
+<meta property="og:description" content="How kdpimageupscaler.com handles images, cookies, and advertising.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kdpimageupscaler.com/privacy.html">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site-pages.css">
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">KDP <span>Image</span> Upscaler</a>
+    <nav>
+      <a href="/#tool">Tool</a>
+      <a href="/#guides">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<h1>Privacy Policy</h1>
+<p>This policy describes kdpimageupscaler.com, a site operated by Brad Lamb. It was last updated on November 27, 2026. It covers the image upscaler, the written guides, and the advertising on those pages.</p>
+
+<h2>Images you open in the upscaler</h2>
+<p>The upscaler processes images in your browser. It does not upload them.</p>
+<p>When you choose files or drop them on the page, the script keeps them in memory on that page. It reads each file with the browser's FileReader API as a data URL, draws the image onto an HTML canvas, and scales the width and height by the ratio of the target DPI to the source DPI you entered. The canvas 2D context is used with image smoothing turned on and the smoothing quality set to high. The page then builds a PNG or JPEG data URL and starts a download through a temporary link. That is the entire image path in the tool.</p>
+<p>The script does not send the image, the data URL, or the file name to a server. There is no account, no image gallery, and no stored copy on this site. When you close or reload the tab, the in-memory copy is discarded. The file you keep is the one your browser saved to your device.</p>
+<p>The resample adds pixels by interpolating from pixels that are already in the file. It does not transmit the picture to a third-party enhancement service.</p>
+
+<h2>Cookies and Google AdSense</h2>
+<p>Pages on this site load Google AdSense so Google can show ads, including Auto ads. The advertising script is:</p>
+<p class="formula">https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298</p>
+<p>Google and other third-party vendors use cookies to serve ads based on your prior visits to this site and to other sites. Those cookies can be used to show ads that relate to your browsing, to limit how often you see an ad, and to measure ad delivery. This site does not place its own ad units by hand. Google chooses the placements when Auto ads run.</p>
+<p>Google's description of how it uses advertising cookies and data is here: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>.</p>
+<p>You can opt out of personalized advertising from Google at <a href="https://www.google.com/settings/ads">https://www.google.com/settings/ads</a>. Browser settings can also block or delete third-party cookies. Blocking cookies does not stop the upscaler from running, because the upscaler does not read those cookies.</p>
+<p>The site code in this project does not include a separate analytics product such as Google Analytics. AdSense still receives the technical data Google uses to serve and measure ads, which can include your IP address, browser, and the page you requested.</p>
+
+<h2>Google Fonts</h2>
+<p>Pages load the Lora and DM Mono typefaces from Google Fonts. Your browser requests those files from Google (fonts.googleapis.com and fonts.gstatic.com). That request is separate from image processing. Google receives the connection data that comes with any request to its font servers, including your IP address.</p>
+
+<h2>Cash App</h2>
+<p>Some pages show the Cash App cashtag $BradfordLamb and a logo image that is stored with this site. The page does not embed a Cash App payment form and does not receive your payment details. If you send money, that transaction is between you and Cash App under Cash App's own terms and privacy policy.</p>
+
+<h2>What this site stores</h2>
+<p>The upscaler does not create an account and does not write the images you process to a database. The only cookies this policy is concerned with are those set by Google's advertising (and any cookies Google Fonts may use while serving font files). Your browser may keep a local copy of the downloaded image wherever you save downloads.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions can be sent to the address on the <a href="/contact.html">contact page</a>. Until a real address is published there, the contact line is the placeholder CONTACT_EMAIL_HERE.</p>
+</main>
+<footer>
+  <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
+  Image processing runs in your browser. Your images are not uploaded.<br>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="/about.html">About</a> ·
+  <a href="/contact.html">Contact</a> ·
+  <a href="/terms.html">Terms</a> ·
+  <a href="/#guides">Guides</a><br><br>
+  This site is not affiliated with Amazon or Kindle Direct Publishing.<br>
+  "KDP" and "Kindle" are trademarks of Amazon.com, Inc.
+</footer>
+</body>
+</html>

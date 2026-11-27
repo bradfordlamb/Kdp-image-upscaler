@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KDP Cover Size Calculator Guide</title>
+<meta name="description" content="Calculate a KDP paperback wrap: bleed, spine width for each paper type, and the pixel size at 300 DPI.">
+<link rel="canonical" href="https://kdpimageupscaler.com/articles/kdp-cover-size-calculator.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-9233848085324298">
+<meta property="og:title" content="KDP Cover Size Calculator Guide">
+<meta property="og:description" content="Calculate a KDP paperback wrap: bleed, spine width for each paper type, and the pixel size at 300 DPI.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kdpimageupscaler.com/articles/kdp-cover-size-calculator.html">
+<meta property="og:image" content="https://kdpimageupscaler.com/favicon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site-pages.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "KDP Cover Size Calculator Guide",
+  "description": "Calculate a KDP paperback wrap: bleed, spine width for each paper type, and the pixel size at 300 DPI.",
+  "url": "https://kdpimageupscaler.com/articles/kdp-cover-size-calculator.html",
+  "mainEntityOfPage": "https://kdpimageupscaler.com/articles/kdp-cover-size-calculator.html",
+  "author": {
+    "@type": "Person",
+    "name": "Brad Lamb"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KDP Image Upscaler"
+  },
+  "dateModified": "2026-11-27"
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">KDP <span>Image</span> Upscaler</a>
+    <nav>
+      <a href="/#tool">Tool</a>
+      <a href="/#guides">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<h1>KDP Cover Size Calculator Guide</h1>
+<p>A KDP paperback cover is one file: the back cover, the spine, and the front cover, in that order, left to right, plus bleed. The pixel dimensions follow from that width and height in inches at 300 DPI. KDP's cover calculator and downloadable template are the file you should build on, because the template already includes their rounding and the barcode area they expect. This page shows the same arithmetic so you can see why a template is a particular size, and so you can tell whether a piece of cover art has enough pixels before you drop it into that template.</p>
+<p>KDP states the equations on the paperback submission guidelines:</p>
+<p class="formula">cover width = bleed + back cover width + spine width + front cover width + bleed<br>cover height = bleed + trim height + bleed</p>
+<p>Bleed is 0.125 inch (3.2 mm) on every side, and the bleed at the bottom must not be more than 0.125 inch. Anything you do not want trimmed off has to sit at least 0.25 inch (6.4 mm) in from the outside cover edge. The front and back cover widths are your trim width. The only number that is not the trim is the spine.</p>
+
+<h2>Spine width depends on paper and page count</h2>
+<p>KDP publishes a multiplier per paper type. Multiply the page count by that factor. The page count is the one KDP calculates from the manuscript, rounded up to an even number if needed. The minimum page count is 24. The maximum depends on trim, ink, and paper, and it is in the table on the same guidelines page.</p>
+<table>
+  <tr><th>Paper</th><th>Spine width</th></tr>
+  <tr><td>Black and white, white paper</td><td>page count × 0.002252 in (0.0572 mm)</td></tr>
+  <tr><td>Black and white, cream paper</td><td>page count × 0.0025 in (0.0635 mm)</td></tr>
+  <tr><td>Black and white, groundwood</td><td>page count × 0.00235 in (0.0596 mm)</td></tr>
+  <tr><td>Color paper</td><td>page count × 0.002347 in (0.0596 mm)</td></tr>
+</table>
+<p>Work a 6 × 9 inch book of 200 pages on white paper, black ink. The spine is 200 × 0.002252 = 0.4504 inch. Cover width is 0.125 + 6 + 0.4504 + 6 + 0.125 = 12.7004 inches. Cover height is 0.125 + 9 + 0.125 = 9.25 inches. At 300 DPI the raster is 12.7004 × 300 = 3,810.12 pixels wide and 9.25 × 300 = 2,775 pixels tall. Round the width up to 3,811 pixels so you are not a fraction short. The same book on cream paper has a spine of 200 × 0.0025 = 0.5 inch, a cover width of 12.75 inches, and a 300 DPI width of 3,825 pixels. Switching paper without rebuilding the wrap moves the front cover art relative to the trim.</p>
+<p>KDP also says every book binds a little differently. Allow 0.0625 inch (1.6 mm) of variance on either side of the fold lines. Do not put essential type on the fold. Spine text is printed only when the book has more than 79 pages. On a thicker spine, keep at least 0.0625 inch between the type and either edge of the spine. Cover Creator's own rule for spine text can differ; the submission guidelines are the ones quoted here, and they say more than 79 pages.</p>
+
+<h2>From inches to a file you can upload</h2>
+<p>A custom paperback cover is a PDF. Cover Creator, if you use Amazon's tool instead, accepts JPG, PNG, and GIF. Either way, KDP's file rules say images should be at least 300 DPI, layers and transparency should be flattened, fonts should be embedded, and the PDF should not contain crop marks, trim marks, bookmarks, comments, or placeholder text. The upload limit is 650 MB. The guidelines recommend you not exceed 600 DPI, so a full wrap stays inside that limit. A 12.7004 × 9.25 inch wrap at 600 DPI would be about 7,621 × 5,550 pixels. That is a legitimate file for line art. It is unnecessary for a photographic cover that was composed at 300 DPI.</p>
+<p>The safe area is the trim, pulled in by 0.25 inch from the outside edges. On the 6 × 9 example, the front cover's live area for type is 0.25 inch inside the trim on the top, bottom, and fore-edge. Keep a similar gap away from the spine fold because of the 0.0625 inch binding variance. Background color and art that you are willing to lose run out through the 0.125 inch bleed. A background that stops at the trim line leaves a white sliver if the cut shifts.</p>
+
+<h2>Barcode</h2>
+<p>You may upload a cover that already has a barcode, or a cover without one. If you do not provide a barcode, KDP places one on the back cover. Leave the lower back cover clear of type and faces if you are letting them add it. The template from KDP's calculator marks that area. This site does not restate a barcode box size, because the guidelines page points you to KDP's barcode help and the template rather than printing a single rectangle here.</p>
+
+<h2>Check artwork before it goes into the wrap</h2>
+<p>A painting or photograph that fills the front cover has to be sized for the front panel at 300 DPI, and the wrap file as a whole has to be sized for the full width. Those are different rectangles. For the 6 × 9 front panel alone, 300 DPI is 1,800 × 2,700 pixels, and that panel still needs bleed if the art runs off the front. A Kindle marketing image of 1,600 × 2,560 pixels is shorter than a 6 × 9 front cover at 300 DPI (1,800 × 2,700), and it has no back cover or spine at all. Stretching it across a 12.7-inch wrap is how covers go soft. The <a href="/articles/low-resolution-kdp-cover.html">low-resolution cover guide</a> is the repair path.</p>
+<p>The calculator in the sidebar of the <a href="/#calculator">homepage</a> answers a different question: given pixels and a DPI, what physical size do you get? Type the pixel size of a piece of art and 300 DPI, and it reports inches. Use that to see whether the art can fill the front panel. Use the wrap formula on this page, or KDP's template, for the PDF you upload. The homepage calculator does not add a spine.</p>
+<div class="cta">
+  <p><strong>Upscale a short piece of art before you place it on the wrap.</strong> Set the tool's source DPI to the art's effective DPI at the panel size, and the target to 300. Do not upscale the finished PDF.</p>
+  <a class="button" href="/#tool">Open the upscaler</a>
+</div>
+
+<h2>A checklist that matches the guidelines</h2>
+<ol>
+  <li>Finish the interior and note the page count KDP will use, on the paper you selected.</li>
+  <li>Multiply that page count by the spine factor for white, cream, groundwood, or color paper.</li>
+  <li>Add bleed + back + spine + front + bleed for the width. Add bleed + trim height + bleed for the height.</li>
+  <li>Multiply both sides by 300 and round up. Download KDP's template for the same trim, page count, and paper, and compare. If your total and the template disagree, use the template. Binding allowances and rounding belong to their file.</li>
+  <li>Build the design centered on the spine, one flattened image, fonts embedded, no crop marks.</li>
+  <li>Keep type 0.25 inch inside the outer trim, and 0.0625 inch inside the spine edges if you have spine text and more than 79 pages.</li>
+  <li>Export PDF. Confirm the pixel size of embedded images is still at least 300 DPI at the wrap size. A later "export for screen" preset can throw that away.</li>
+</ol>
+<p>Ebook covers are not this calculation. They are a single front image. KDP's ideal size is 2,560 pixels tall by 1,600 pixels wide. See the <a href="/articles/kindle-cover-resolution-guide.html">Kindle cover guide</a> before you resize a wrap PDF down and upload it as the Kindle image. A wrap includes the back and the spine, which KDP tells you not to include on the ebook marketing cover.</p>
+
+<h2>Sources</h2>
+<ul>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G201857950">Paperback Submission Guidelines</a> — cover equations, bleed, spine factors, spine text, and barcode.</li>
+  <li><a href="https://kdp.amazon.com/en_US/cover-templates">KDP cover calculator and templates</a> — the template to design against.</li>
+</ul>
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/articles/low-resolution-kdp-cover.html">Fix a low-resolution KDP cover</a></li>
+  <li><a href="/articles/best-dpi-for-kdp.html">Best DPI for covers and interiors</a></li>
+  <li><a href="/articles/kdp-image-requirements.html">Print image requirements</a></li>
+</ul>
+
+</main>
+<footer>
+  <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
+  Image processing runs in your browser. Your images are not uploaded.<br>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="/about.html">About</a> ·
+  <a href="/contact.html">Contact</a> ·
+  <a href="/terms.html">Terms</a> ·
+  <a href="/#guides">Guides</a><br><br>
+  This site is not affiliated with Amazon or Kindle Direct Publishing.<br>
+  "KDP" and "Kindle" are trademarks of Amazon.com, Inc.
+</footer>
+</body>
+</html>

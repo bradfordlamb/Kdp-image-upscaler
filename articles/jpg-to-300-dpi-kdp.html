@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Convert a JPG to 300 DPI for KDP</title>
+<meta name="description" content="Turn a JPG into a 300 DPI print image for KDP by calculating pixels, then resampling only when the file is short.">
+<link rel="canonical" href="https://kdpimageupscaler.com/articles/jpg-to-300-dpi-kdp.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-9233848085324298">
+<meta property="og:title" content="How to Convert a JPG to 300 DPI for KDP">
+<meta property="og:description" content="Turn a JPG into a 300 DPI print image for KDP by calculating pixels, then resampling only when the file is short.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kdpimageupscaler.com/articles/jpg-to-300-dpi-kdp.html">
+<meta property="og:image" content="https://kdpimageupscaler.com/favicon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9233848085324298" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site-pages.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Convert a JPG to 300 DPI for KDP",
+  "description": "Turn a JPG into a 300 DPI print image for KDP by calculating pixels, then resampling only when the file is short.",
+  "url": "https://kdpimageupscaler.com/articles/jpg-to-300-dpi-kdp.html",
+  "mainEntityOfPage": "https://kdpimageupscaler.com/articles/jpg-to-300-dpi-kdp.html",
+  "author": {
+    "@type": "Person",
+    "name": "Brad Lamb"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KDP Image Upscaler"
+  },
+  "dateModified": "2026-11-27"
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">KDP <span>Image</span> Upscaler</a>
+    <nav>
+      <a href="/#tool">Tool</a>
+      <a href="/#guides">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<h1>How to Convert a JPG to 300 DPI for KDP</h1>
+<p>A JPG becomes a 300 DPI KDP image when it contains enough pixels for the rectangle it will print, not when a dialog has been switched from 72 to 300. KDP's image guide says changing the DPI reading can display a higher number and still leave the quality unchanged, because the pixel grid did not grow. The conversion that matters is: decide the print size in inches, multiply by 300, and resample the JPG only if the current pixel size is smaller than that product.</p>
+<p>This page is the sequence for a photograph or other continuous-tone JPG you will place in a paperback interior or on a cover. Kindle ebook covers are specified in pixels, and KDP's ebook pages disagree with each other about DPI. Use the <a href="/articles/kindle-cover-resolution-guide.html">Kindle cover guide</a> for that file. Do not run an ebook cover through a 72-to-300 print conversion and expect that alone to satisfy the 2,560 × 1,600 recommendation.</p>
+
+<h2>Step 1: Write down the printed rectangle</h2>
+<p>Measure the width and height the JPG will occupy in the finished book, in inches. A figure captioned as "half the page" still needs a number. On a 6 × 9 inch book of 200 pages with no bleed, KDP's minimum inside margin is 0.5 inch and the minimum outside margin is 0.25 inch. The text block is 5.25 inches wide and 8.5 inches tall. A photo that spans that width and is 4 inches tall needs a 5.25 × 4 inch target, not a 6 × 9 inch target.</p>
+<p>Cover art uses the full wrap, including spine and 0.125 inch bleed on each outer side. The <a href="/articles/kdp-cover-size-calculator.html">cover size guide</a> has the addition. If you only multiply the front-cover trim by 300, the wrap will be short.</p>
+
+<h2>Step 2: Compute the pixel target</h2>
+<p class="formula">required width = inches wide × 300<br>required height = inches tall × 300</p>
+<p>For the 5.25 × 4 inch photo, that is 1,575 × 1,200 pixels. Round up if the inch measurement produces a fraction. These are minimums. KDP's paperback guidelines also recommend that you not go past 600 DPI, which would be 3,150 × 2,400 for the same rectangle, so the PDF stays under the 650 MB limit. Photographs do not need that second step. The <a href="/articles/300-vs-600-dpi-kdp.html">300 versus 600 guide</a> explains when the larger grid is for line art rather than for JPGs of photos.</p>
+
+<h2>Step 3: Read the JPG's real pixel size</h2>
+<p>Use the pixel width and height, which KDP tells you to find under the image details in the file properties. Ignore a DPI field until you have done the division yourself. Effective DPI is pixels ÷ inches. A 1,000 × 750 JPG printed at 5.25 × 4 inches is 1,000 ÷ 5.25 ≈ 190 DPI across and 750 ÷ 4 = 187.5 DPI down. Both sides are under 200, which is KDP's definition of low resolution, and under the 300 DPI minimum.</p>
+<p>A 1,800 × 1,400 JPG printed at the same 5.25 × 4 inches is 1,800 ÷ 5.25 ≈ 343 DPI across and 1,400 ÷ 4 = 350 DPI down. That file already meets the minimum. Converting it further does not help the print. Leave it, and export once at high quality.</p>
+
+<h2>Step 4: Resample only the shortfall</h2>
+<p>When the JPG is short, the scale you want is required pixels ÷ current pixels. For the 1,000-pixel-wide file and a 1,575-pixel target, the scale is 1.575. You can do that in any editor that resamples rather than relabeling. You can also do it with the tool on this site, because the tool's scale is target DPI ÷ source DPI, and it applies that scale to the pixel width and height.</p>
+<p>Set Source DPI to the effective DPI (190 is close enough for the width in the example; use the lower of the width and height figures so both sides clear 300). Set Target DPI to 300. The script rejects the job if the source is greater than or equal to the target, and it rejects empty or zero values. It draws the image on a canvas with smoothing enabled and smoothing quality set to high, then saves a data URL. Choose JPEG in the Format menu for a photograph. The Quality field defaults to 95 and is passed to the JPEG encoder as 0.95. The downloaded name is the original base name plus an underscore, the target DPI, and <span class="formula" style="display:inline;padding:2px 6px;margin:0;">dpi.jpg</span>, for example <em>photo_300dpi.jpg</em>.</p>
+<div class="cta">
+  <p><strong>Match the fields to the math.</strong> Source = current pixels ÷ print inches. Target = 300. Leaving source at the form's default of 72 scales by 300 ÷ 72 ≈ 4.17 even when you only needed 1.5.</p>
+  <a class="button" href="/#tool">Open the upscaler</a>
+</div>
+<p>The canvas JPEG does not store a 300 DPI density tag. Windows or macOS may still report 72 or 96 DPI after the download. That label is the same kind of metadata KDP warns you about. Confirm the pixel dimensions. For the example, you want at least 1,575 × 1,200. Then place the file at 5.25 × 4 inches in the manuscript. If you place it larger, the effective DPI falls back under 300.</p>
+
+<h2>Step 5: Save the JPG once, at high quality</h2>
+<p>JPEG compression is lossy. Opening and re-exporting a JPG over and over softens detail and adds blocks, which then look like blur in print. Keep the camera original or a single working TIFF or PNG, and write the KDP JPEG at the end. A quality setting around the tool's default of 95 is a high-quality export. Dropping the slider to make a small email attachment is the wrong direction for a book. KDP's ebook cover notes, which discuss compression more explicitly than the print pages, say extra compression hurts quality and that you should upload with as little compression as you can. The same habit is right for interior photos. The print cap is 650 MB, so you have room for a clean JPEG long before you need a crushed one.</p>
+<p>If the image contains type, a logo, or a hard-edged diagram, JPEG is the wrong container even at quality 95. Export PNG instead. The format choice is covered in <a href="/articles/kdp-png-vs-jpg.html">PNG vs JPG</a>. The tool offers only those two outputs. It does not write TIFF.</p>
+
+<h2>Step 6: Put it in the book without stretching it</h2>
+<p>Insert the new file at the inch size you used in the multiplication. Turn off image compression in the manuscript editor if that editor has the option KDP documents for Word. Do not drag a handle to "make it fit" a larger box. If the layout needs a larger box, go back to step 1 with the new inches. Flatten transparency before the final PDF. Interior files that bleed must be uploaded as PDF. Files that do not bleed may be PDF, DOC, DOCX, RTF, HTML, or TXT.</p>
+<p>Then check KDP's previewer. A low-resolution warning after this sequence usually means the placed size and the size you multiplied are different. Divide the PDF's image pixels by the inches you see on the preview page. The upscaler has already done its part if that division is 300 or more. Remaining softness is in the photograph itself.</p>
+
+<h2>Sources</h2>
+<ul>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G202169030">Format Images in Your Book</a> — DPI as pixels divided by inches, and why changing the DPI reading does not add quality.</li>
+  <li><a href="https://kdp.amazon.com/en_US/help/topic/G201857950">Paperback Submission Guidelines</a> — 300 DPI minimum, 600 DPI suggested maximum, 650 MB, margins, and manuscript file types.</li>
+</ul>
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/articles/kdp-image-resizer.html">What the upscaler changes in the file</a></li>
+  <li><a href="/articles/blurry-kdp-images.html">Why images still look blurry</a></li>
+  <li><a href="/articles/best-dpi-for-kdp.html">Best DPI for KDP</a></li>
+</ul>
+
+</main>
+<footer>
+  <strong>KDP Image Upscaler</strong> · Free tool for Amazon Kindle Direct Publishing authors<br>
+  Image processing runs in your browser. Your images are not uploaded.<br>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="/about.html">About</a> ·
+  <a href="/contact.html">Contact</a> ·
+  <a href="/terms.html">Terms</a> ·
+  <a href="/#guides">Guides</a><br><br>
+  This site is not affiliated with Amazon or Kindle Direct Publishing.<br>
+  "KDP" and "Kindle" are trademarks of Amazon.com, Inc.
+</footer>
+</body>
+</html>
